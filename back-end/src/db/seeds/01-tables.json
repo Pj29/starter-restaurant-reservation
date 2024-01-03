@@ -1,0 +1,22 @@
+[
+    {
+        "table_name": "Dining Room 1",
+        "capacity": 4,
+        "reservation_id": null
+    },
+    {
+        "table_name": "Dining Room 2",
+        "capacity": 4,
+        "reservation_id": null
+    },
+    {
+        "table_name": "Dining Room 3",
+        "capacity": 4,
+        "reservation_id": null
+    },
+    {
+        "table_name": "Dining Room 4",
+        "capacity": 2,
+        "reservation_id": null
+    }
+]
