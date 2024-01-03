@@ -47,7 +47,7 @@ function NewReservation() {
   };
 
   return (
-    <main>
+    <>
       <div>
         <h1>Create a New Reservation</h1>
         <ErrorAlert error={error} setError={setError} />
@@ -58,7 +58,7 @@ function NewReservation() {
         handleSubmit={handleSubmit}
         changeHandler={changeHandler}
       />
-    </main>
+    </>
   );
 }
 
