@@ -22,5 +22,21 @@ function NewReservation() {
 
     const changeHandler = useCallback(( { target }) => {
         setReservation(previousReservation => ({ ...previousReservation, [target.name]: target.value}));
-    })
+    }, []);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const abortController = new AbortController();
+        try {
+            const newRes = await createReservation(reservation, abortController.signal);
+            history.push(`/dashboard?date=${newReservation.reservation_date.slice(0, 10)}`);
+        } catch (error) {
+            setError(error);
+        }
+
+        return () => abortController.abort();
+    }
+
+    return ()
 }
