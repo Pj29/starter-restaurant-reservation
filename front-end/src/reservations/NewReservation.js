@@ -61,3 +61,5 @@ function NewReservation() {
     </main>
   );
 }
+
+export default NewReservation;
